@@ -5,6 +5,8 @@
 колір фону #FFFFFF
 вториний колір фону #F5F4FA
 колір футера #2F303A
+чорний колір #000000
+сірий колір у футері rgba(255, 255, 255, 0.6)
 */
 :root{
    --primary-text-color: #757575;
@@ -14,6 +16,7 @@
    --secondary-background-color:#F5F4FA;
    --footer-color: #2F303A;
    --black-color: #000000;
+   --silver-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -135,7 +138,7 @@ body{
    background-color: var(--footer-color);
 }
 .footer-nav .link{
-   color: var(--primary-text-color);
+   color: var(--silver-color);
 
    line-height: 1.71;
    font-style: normal;
@@ -162,7 +165,7 @@ body{
 /*копки*/
 /*загальні властивості кнопки*/
 .button{
-   font-family: 'Roboto', sans-serif;
+   font-family: inherit;
    font-size: 16px;
    cursor: pointer;
    text-align: center;
