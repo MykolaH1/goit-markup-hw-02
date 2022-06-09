@@ -13,6 +13,7 @@
    --background-color: #FFFFFF;
    --secondary-background-color:#F5F4FA;
    --footer-color: #2F303A;
+   --black-color: #000000;
 }
 
 
@@ -28,7 +29,7 @@ body{
 
 /*хеадер*/
 .logo{
-   color: var(--accent-color);
+   color: var(--black-color);
 
    font-family: 'Raleway', sans-serif;
    font-size: 26px;
@@ -36,14 +37,20 @@ body{
    font-weight: 700;
    text-decoration: none;
 }
-
-
+.logo span{
+   color: var(--accent-color);
+}
+.footer-logo{
+   color: var(--background-color);
+}
 
 /*site nav*/
 .site-nav .link{
    color: var(--title-text-color);
 
    font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
    letter-spacing: 0.02em;
    text-decoration: none;
 }
@@ -56,6 +63,8 @@ body{
    color: var(--primary-text-color);
 
    font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
    letter-spacing: 0.02em;
    text-decoration: none;
 }
@@ -79,6 +88,7 @@ body{
    letter-spacing: 0.06em;
    font-weight: 900;
    text-align: center;
+   text-transform: uppercase;
 }
 /*section*/
 .section-title{
@@ -87,6 +97,7 @@ body{
    font-size: 36px;
    line-height: 1.16;
    text-align: center;
+   
 }
 /*peculiarities*/
 .peculiarities-list .title{
@@ -103,16 +114,20 @@ body{
 /*team*/
 .team{
    background-color: var(--secondary-background-color);
-
-   font-size: 16px;
-   line-height: 1.18;
-   font-weight: 400;
 }
 .team-list .title {
    color: var(--title-text-color);
 
    font-weight: 500;
    font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+}
+.team-list .text{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
 }
 
 /*footer*/
@@ -143,28 +158,48 @@ body{
 }
 
 
-/*сторінка портфоліо*/
+
 /*копки*/
+/*загальні властивості кнопки*/
 .button{
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+}
+.hero .button {
    background-color: var(--accent-color);
    color: var(--background-color);
 
-   font-family: 'Roboto', sans-serif;
    font-weight: 700;
-   font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.06em;
-   cursor: pointer;
 }
+/*сторінка портфоліо*/
 
+.list .button{
+   background-color: var(--secondary-background-color);
+   color: var(--title-text-color);
+
+   font-weight: 500;
+   line-height: 1.62;
+   letter-spacing: 0.03em;
+   
+}
+.list .button:hover,
+.list .button:focus {
+   background-color: var(--accent-color);
+   color: var(--background-color);
+}
 /*projects-list*/
 .projects-list .title{
    color: var(--title-text-color);
 
    font-size: 18px;
    line-height: 2;
+   letter-spacing: 0.06em;
 }
-.projects-list .text{
+.projects-list .text{   
    font-size: 16px;
    line-height: 1.88;
 }
